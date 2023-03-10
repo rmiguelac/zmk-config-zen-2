@@ -31,29 +31,29 @@
                         label = "NUMBER";
 // -----------------------------------------------------------------------------------------
 // |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BKSP | BT1 | BT2 | BT3 | BT4 | BT5 |   |  `  |     |  UP |     |     |      |
-// |      | BTCLR |   |     |     | DEL |   |     | LFT | DWN | RGT |     |      |
+// | SHFT |     |     |     |     |     |   |  `  |     |  UP |     |     |      |
+// | CTRL |     |     |     |     | DEL |   |     | LFT | DWN | RGT |     |      |
 //                    | GUI |     | ENT |   | SPC |     | ALT |
                         bindings = <
-   &kp ESC   &kp N1       &kp N2       &kp N3       &kp N4       &kp N5        &kp N6     &kp N7   &kp N8    &kp N9    &kp N0 &kp BSPC
-   &kp BSPC  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &kp GRAVE  &trans   &kp UP    &trans    &trans &trans
-   &trans    &bt BT_CLR   &trans       &kp DEL      &trans       &trans        &trans     &kp LEFT &kp DOWN  &kp RIGHT &trans &trans
-                          	       &kp LGUI     &trans       &kp RET       &kp SPACE  &trans   &kp RALT
+   &kp ESC    &kp N1  &kp N2   &kp N3   &kp N4   &kp N5        &kp N6     &kp N7   &kp N8    &kp N9    &kp N0 &kp BSPC
+   &kp LSHFT  &trans  &trans   &trans   &trans   &trans        &kp GRAVE  &trans   &kp UP    &trans    &trans &trans
+   &kp LCTRL  &trans  &trans   &trans   &trans   &kp DEL       &trans     &kp LEFT &kp DOWN  &kp RIGHT &trans &trans
+                               &kp LGUI &trans   &kp RET       &kp SPACE  &trans   &kp RALT
                         >;
                 };
 
                 raise_layer {
                         label = "SYMBOL";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | SHFT |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | CTRL |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+// |  ESC |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+// | BKSP | BT1 | BT2 | BT3 | BT4 | BT5 |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | CTRL | BTCRL |   |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | ENT |   | SPC |     | ALT |
                         bindings = <
-   &kp  TAB    &kp EXCL  &kp AT   &kp HASH   &kp DLLR   &kp PRCNT   &kp CARET  &kp  AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-   &kp LSHFT   &trans    &trans   &trans     &trans     &trans      &kp MINUS  &kp  EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-   &kp LCTRL   &trans    &trans   &trans     &trans     &trans      &kp UNDER  &kp  PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                    	     &kp LGUI &trans   &kp RET   &kp SPACE   &trans    &kp RALT
+   &kp ESC    &kp EXCL  &kp AT   &kp HASH   &kp DLLR   &kp PRCNT                    &kp CARET  &kp  AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+   &kp BSPC   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &kp MINUS  &kp  EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+   &kp LCTRL   &bt BT_CLR    &trans   &trans     &trans     &trans                  &kp UNDER  &kp  PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+                    	     &kp LGUI &trans   &kp RET                              &kp SPACE   &trans    &kp RALT
                         >;
                 };
         };
